@@ -1,0 +1,77 @@
+Metric,,Definition,Interpretation for Strategy,Key References,
+Fixation-derived metrics,,,,,
+PTM (Proportional Time on Matrix),,Time on matrix / total item time,↑ PTM → Constructive Matching; ↓ PTM → Response Elimination,"Vigneau et al. (2006); Liu et al. (2023, 2025)",
+LFT (Latency to First Toggle),,Time from start until first gaze shift to options,↑ LFT → Deep matrix processing (Constructive); ↓ LFT → Elimination,Vigneau et al. (2006); Hayes et al. (2011),
+RLT (Rate of Latency to First Toggle),,LFT / total time,↑ RLT → Higher matrix focus → Constructive Matching,"Liu et al. (2023, 2025)",
+NOT (Number of Toggles),,Total count of gaze switches between matrix and options,↑ NOT → Elimination; ↓ NOT → Constructive,Vigneau et al. (2006); Hayes et al. (2011),
+ROT (Rate of Toggling),,NOT / total item time,↑ ROT → Rapid toggling → Elimination; ↓ ROT → Constructive Matching,Laurence et al. (2018); Raden & Jarosz (2022),
+Fixation Duration,total fixation time (FT),Average time per fixation on an AOI,Long fixations → Possible deep processing or confusion,Bethell-Fox et al. (1984); Glady et al. (2017),"A longer fixation duration describes issues related to extracting information, or it indicates that the object is more appealing (Just & Carpenter, 1976)."
+Mean Fixation Duration,average fixation duration,Average length of each fixation,Longer → deeper processing; Shorter → scanning,Glaholt & Reingold (2011); Unsworth et al. (2015);Bing Pan et al. (2005),The average duration of the fixations within each area of interest on all Media. It shows how long the average fixation lasted for
+Max Fixation Duration,,,,,
+Fixation Count (FC),"number of fixations, fixation frequency",Total number of fixations during the item,↑ Fixation count → uncertainty or extensive search (Elimination),Hayes et al. (2011); Glady et al. (2017),The number of fixations on media indicates  efficiency in information search.
+Fixatioin Rate (FR),,,,,The frequency of looking at some point per  second. It represent attention.
+Fixation Spatial Density (SD),,,,,"Fixations concentrated in a small area indicate focused and efficient searching (Cowen et al., 2002)."
+Fixation density,,,,,"It is the number of gaze points inside a fixation event divided by the smallest area to record all gaze events (Brookings, J. B., Wilson, G. F., & Swain, C. R., 1996)."
+Fixations per area of interest,,,,,"More fixations on a specified area signify that it is more perceptible, or more significant to the viewer than other areas (Poole et al., 2004)."
+First fixation probability,,,,,
+Last fixation probability,,,,,
+Convex hull,,,,,
+On-target Fixation,,,,,Fixations on-target divided by total number of fixations. A lower ratio indicates lower search efficiency.
+Ratio of ON-target:All-target Fixation Time (ROAFT),,,,,
+Normalised Rate of Relevant Fixations (NRRF),,,,,
+Time to first fixation ontarget,,,,,"The time-to-first fixation for each area of interest on all Media and indicates that an object or area has a better attention-getting properties (Byrne et al., 1999)."
+Dwell Time,,Total time spent in a defined AOI (matrix or options),Matrix > Options → Constructive Matching,Common across APM studies,Time spent in the same position and area. It indicates measuring the time the user remains at a search result after a click.
+Gaze,,,,,"Sum of all fixation durations within a specified area. It is best utilized to evaluate attention distributed among targets (MelloThoms et al., 2004; Hauland, 2003)."
+Gzae samples,,,,,A series of close gaze points or gaze cluster in space and time indicates a period where the eyes are locked towards an object.
+Attention Switching Frequency,,,,,
+,,,,,
+Saccade-derived metrics,,,,,
+Length of saccade,,,,,Duration of changing the point of fixation and this indicates visual attention and cognitive relevance.
+number of saccades,,,,,"Number of involuntary, abrupt, rapid, small movements of both eyes simultaneously in changing the point of fixation. (Goldberg &Kotval, (1999)."
+Saccade amplitude,,,,,"It is the distance travelled by a saccade from onset to offset. Larger saccades indicate more meaningful cues (Goldberg et al., 2002)."
+Saccade velocity,,,,,
+saccade frequency,,,,,
+saccade rate,,,,Bing Pan et al. (2005),
+Saccade duration,,,,,The time duration of a rapid movement of the eye between two fixation points. More saccades indicate more searching.
+Max saccade duration,,,,,
+Saccadic acceleration,,,,,
+microsaccadeamplitude,,,,,
+microsaccade rate,,,,,
+Smooth pursuit gain,,,,,
+Saccadic regression,,,,,"Events that move in the opposite direction to the text. Regressions indicate the presence of less meaningful cues. (Sibert et al., 2000)."
+,,,,,
+Scanpath-derived metrics,,,,,
+Scan path duration,,,,,"Duration of a complete sequence of fixations and interconnecting saccades. A long lasting scan path signifies lesser effectiveness (Goldberg &Kotval, 1999)."
+Scan path Length,,,,,"A lengthier scanpath denotes less efficient Searching (Goldberg et al., 2002)."
+Spatial Density,,,,,"Lesser spatial density signifies more  direct Search (Goldberg &Kotval, 1999)."
+Scanpath Regularity,,,,,"Deviance from a normal scanpath denote search issues related to interface (Goldberg &Kotval, 1999)."
+Saccade/Fixation Ratio,,,,Joseph & Murugesh (2020),"This is a comparison between time spent on searching (saccade) and time spent on processing (fixations). Here, higher ratio implies more processing or less searching."
+Scanpath Direction,,,,,"The path in which a whole order of fixations and interlinked saccades occur. This can indicate participant�s search strategy (Altonen et al., 1998)."
+Attention Switching Frequency,,,,,
+Transitional Matrix,,,,,
+Edit Distance,,,,,
+Sequential PAttern Mining (SPAM),,Sequence and structure of gaze fixations across AOIs,Structured scanpath → Constructive; Erratic → Elimination or trial & error,Hayes et al. (2011); Glady et al. (2017),
+ScanMatch,,,,,
+,,,,,
+Pupil size and blink rate,,,,,
+Pupil,,,,,
+Pupil Dilation (PD),,Changes in pupil size over time,↑ PD → cognitive effort/load (Constructive),Beatty (1982); Just & Carpenter (1993),
+Pupil size,,,,,"The size of the pupil in response to the media. Pupil size could be used as a manifestation of cognitive workload (Marshall, 2000; Pomplun&Sunkara, 2003).  It is an involuntary reflex and the pupil can range in diameter from 1/16 inch (1.5mm) to 1/3 (8mm). Changes in pupil dilation accompany effortful cognitive process."
+percent of change in the pupil size,,,,,
+Pupil size std,,,,,
+Blink rate,eye blink frequency,,,Maffei & Angrilli (2019),"The blink frequency per minute. The blink rate and pupil size could be considered as a manifestation of cognitive workload (Bruneau, Sasse, & McCarthy, 2002; Brookings; Wilson, & Swain, 1996; Marshall, 2000; Pomplun&Sunkara, 2003)."
+Blink duration,,,,Ozkan & Ulutas (2016),Closure time duration of a blink in ms. Provides information about cognitive load and attention.
+Velocity of blinking,,,,,Velocity attained while eye lid closing and opening. Gives information about cognitive load and attention.
+Blink latency,,,,,"Latency in the saccadic system is around 200 ms, and corresponds to the time from the onset of the stimulus to the initiation of the eye movement. Provides information about cognitive load and attention."
+,,,,,
+,,,,,
+Others,,,,,
+Transition Matrices / Markov Chains,,Probabilities of gaze transitions between AOIs,Systematic transitions → Constructive; Chaotic transitions → Elimination,Hayes et al. (2011),
+Time to First Fixation on Options (TFO),Time to first fixation,Time until first gaze lands on any option,Longer TFO → delayed option comparison → Constructive,Derived from LFT logic,
+Revisits to AOIs,,Number of times a participant returns to a previously viewed area,Revisits to matrix → Constructive; to options → Elimination,Used in visual search & reasoning studies,
+Entropy of Gaze Transitions,,Measure of randomness in gaze shifts between AOIs,High entropy → disorganized (trial-and-error); Low → systematic,D'Mello et al. (2012); Ellis et al. (2018),
+Scanpath Length,,Total distance traveled by gaze during the item,Longer → exhaustive or inefficient search (Elimination),Duchowski (2007); Glady et al. (2017),
+Gaze Transition Rate,,Number of gaze transitions per second,Higher rate → more transitions = Elimination-like strategy,Generalization of ROT,
+First-Pass Duration,,Time spent on an AOI before moving away the first time,Longer duration → more initial encoding effort (Constructive),Used in reading and visual inspection studies,
+Gaze Time,,,,Bing Pan et al. (2005),
+Gaze distribution,,,,,
