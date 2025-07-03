@@ -10,7 +10,6 @@ This project investigates cognitive strategy and spatial reasoning through the a
 - [Update Log](#update-log)
 - [License](#license)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Dataset Description
 
@@ -19,7 +18,6 @@ This project investigates cognitive strategy and spatial reasoning through the a
 - Preprocessed to remove 3 warm-up trials per participant
 - Participant ET220002 removed due to insufficient valid trials
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Research Goals
 
@@ -27,7 +25,6 @@ This project investigates cognitive strategy and spatial reasoning through the a
 - Reduce dimensionality using feature importance and clustering
 - Link gaze behavior to performance outcomes
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## How to Run
 
@@ -38,13 +35,11 @@ Run `analysis.ipynb` to:
 
 Dependencies: pandas, sklearn, matplotlib
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Variable Reference
 
 See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Update Log
 
@@ -52,7 +47,6 @@ See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
 - **2025-06-28**: Dropped warm-up trials and removed ET220002
 - **2025-06-10**: Preprocessing pipeline finalized for 150 valid samples
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## License
 
