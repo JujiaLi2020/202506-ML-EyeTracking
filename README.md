@@ -38,7 +38,7 @@ Dependencies: pandas, sklearn, matplotlib
 
 ## Variable Reference
 
-See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
+See [data_dictionary.md](data/data_dictionary.md) for full metric descriptions.
 
 
 ## Update Log
