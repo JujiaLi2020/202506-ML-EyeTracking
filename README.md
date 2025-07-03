@@ -10,6 +10,54 @@ This project investigates cognitive strategy and spatial reasoning through the a
 - [Update Log](#update-log)
 - [License](#license)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Dataset Description
+
+- 150 trials from spatial reasoning tasks
+- EyeLink 1000+ raw exports
+- Preprocessed to remove 3 warm-up trials per participant
+- Participant ET220002 removed due to insufficient valid trials
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Research Goals
+
+- Identify eye-tracking metrics predictive of strategy types (e.g., Holistic(planner), Piecemeal(explorer))
+- Reduce dimensionality using feature importance and clustering
+- Link gaze behavior to performance outcomes
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## How to Run
+
+Run `analysis.ipynb` to:
+- Clean data
+- Extract metrics
+- Train ML models (Random Forest, PCA)
+
+Dependencies: pandas, sklearn, matplotlib
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Variable Reference
+
+See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Update Log
+
+- **2025-07-03**: Added `data_dictionary.md` and linked from README
+- **2025-06-28**: Dropped warm-up trials and removed ET220002
+- **2025-06-10**: Preprocessing pipeline finalized for 150 valid samples
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+License / Credits / Contact
+
+- Thanks to Dr. Kaiwen Man, Dr. Joni Lakin, and other colleagues.
+
 
 
 7/1/2025
