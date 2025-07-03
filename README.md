@@ -54,10 +54,19 @@ See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-License / Credits / Contact
+## License
 
+This project is released for academic use only. Please contact the authors if you wish to use this data or code in commercial or derivative work.
 - Thanks to Dr. Kaiwen Man, Dr. Joni Lakin, and other colleagues.
 
+## Credits
+
+- Eye-tracking data collected using SR Research EyeLink 1000+
+- Machine learning analysis based on the course *Machine Learning by Andrew Ng*
+- Theoretical grounding based on work by Mary Hegarty, David Lohman, and related authors
+- Research supported by University of Alabama, Educational College
+
+Special thanks to Dr. Kaiwen Man, Dr. Joni Lakin, and colleagues.
 
 
 7/1/2025
