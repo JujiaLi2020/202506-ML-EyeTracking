@@ -43,9 +43,11 @@ See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
 
 ## Update Log
 
+See [Update Log.md](./update_log.md) for detailed updata and process.
 - **2025-07-03**: Added `data_dictionary.md` and linked from README
 - **2025-06-28**: Dropped warm-up trials and removed ET220002
-- **2025-06-10**: Preprocessing pipeline finalized for 150 valid samples
+- **2025-06-28**: Preprocessing pipeline finalized for 150 valid samples
+- **2025-06-01**: 
 
 
 ## License
