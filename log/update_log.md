@@ -6,12 +6,11 @@
 
 7/2/2025
 1. Set up this repository to organize all required materials and maintain a clear, collaborative workflow.
- 
+
+
 2. Organized Eye-Tracking Metrics
   Extracted and reviewed 50 trial-level metrics from EyeLink exports
   Categorized them into fixation, saccade, pupil, blink, AOI, and interaction features
-
-3. Defined Feature Dictionary
   Created data_dictionary.md documenting all variables with descriptions
   Linked this dictionary for future GitHub integration: [data_dictionary.md](./data_dictionary.md)
 
@@ -64,7 +63,5 @@ Earned certification to formally validate this training.
 
 After looking deeply, I found that these participants, who have 23 trails, initially completed three test trials (blank) at the beginning of the task, we still can use them. 
 Some participants (8), who have less than 21 trails, might be excluded from the analysis. However, if we focus on cognitive strategy for each trail, instead of each participant, we can keep all of these data. I will begin preliminary research with these data.
-
-
 
 2. Ensured data is ready for feature engineering and machine learning model development in the next research phase.
