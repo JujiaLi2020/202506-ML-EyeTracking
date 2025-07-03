@@ -1,5 +1,16 @@
-# 202506-ML-EyeTracking
-This is an study on spatial reasoning ability assessment with eye tracking data, using machine learning meethod.
+# Eye-Tracking Metrics Exploration with Machine Learning
+
+This project investigates cognitive strategy and spatial reasoning through the analysis of eye-tracking data. Using machine learning, we explore which gaze metrics contribute most to problem-solving performance and strategy classification.
+
+## Table of Contents
+- [Dataset Description](#dataset-description)
+- [Research Goals](#research-goals)
+- [How to Run](#how-to-run)
+- [Variable Reference](#variable-reference)
+- [Update Log](#update-log)
+- [License](#license)
+
+
 
 7/1/2025
 1. Machine Learning Preparation
@@ -12,9 +23,10 @@ Aligned acquired ML knowledge with the goals of applying predictive and pattern 
 Earned certification to formally validate this training.
 
 2. Eye-Tracking Data Preparation
-Successfully extracted and cleaned raw eye-tracking data from the collection device. Flag incomplete participant, whose trail number is not equal to 21. The flagged data is listed below:
-  ET24_068 (23), ET24_091 (23), ET24_092 (23), ET220002 (19), ET220003 (23), ET220008 (23)
-After looking deeply, I found that these participants initially completed three test trials at the beginning of the task. These test trials were excluded from the analysis, and only participant ET220002, who completed only 19 trials in total, was subsequently removed from the dataset.
+  2.1 Successfully extracted raw eye-tracking data from the collection device.
+  2.2 Flag incomplete participant, whose trail number is not equal to 21. The flagged data is listed below:
+    ET24_068 (23), ET24_091 (23), ET24_092 (23), ET220002 (19), ET220003 (23), ET220008 (23)
+  After looking deeply, I found that these participants initially completed three test trials at the beginning of the task. These test trials were excluded from the analysis, and only participant ET220002, who completed only 19 trials in total, was subsequently removed from the dataset.
 
 Data format standardization (fixation, saccade, and AOI metrics)
 Preliminary quality check and outlier detection
