@@ -14,6 +14,7 @@ Earned certification to formally validate this training.
 2. Eye-Tracking Data Preparation
 Successfully extracted and cleaned raw eye-tracking data from the collection device. Flag incomplete participant, whose trail number is not equal to 21. The flagged data is listed below:
   ET24_068 (23), ET24_091 (23), ET24_092 (23), ET220002 (19), ET220003 (23), ET220008 (23)
+After looking deeply, I found that these participants initially completed three test trials at the beginning of the task. These test trials were excluded from the analysis, and only participant ET220002, who completed only 19 trials in total, was subsequently removed from the dataset.
 
 Data format standardization (fixation, saccade, and AOI metrics)
 Preliminary quality check and outlier detection
