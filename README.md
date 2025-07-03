@@ -13,10 +13,9 @@ This project investigates cognitive strategy and spatial reasoning through the a
 
 ## Dataset Description
 
-- 150 trials from spatial reasoning tasks
+- 80 participants from spatial reasoning tasks (30 from 2024, 50 from 2023)
 - EyeLink 1000+ raw exports
-- Preprocessed to remove 3 warm-up trials per participant
-- Participant ET220002 removed due to insufficient valid trials
+Details can be found: [Data_clean.ipynb](notebooks/Data_clean.ipynb)
 
 
 ## Research Goals
