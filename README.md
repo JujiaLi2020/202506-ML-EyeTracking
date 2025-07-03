@@ -1,4 +1,4 @@
-# Eye-Tracking Metrics Exploration with Machine Learning
+# Spatial Reasoning and Cognitive Strategy - Eye Tracking Metrics Exploration with Machine Learning
 
 This project investigates cognitive strategy and spatial reasoning through the analysis of eye-tracking data. Using machine learning, we explore which gaze metrics contribute most to problem-solving performance and strategy classification.
 
@@ -38,7 +38,7 @@ Dependencies: pandas, sklearn, matplotlib
 
 ## Variable Reference
 
-See [data_dictionary.md](./data_dictionary.md) for full metric descriptions.
+See [data_dictionary.md](data/data_dictionary.md) for full metric descriptions.
 
 
 ## Update Log
