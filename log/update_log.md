@@ -1,12 +1,11 @@
 
-7/2/2025
+7/3/2025
 
 
 
 
 7/2/2025
 1. Set up this repository to organize all required materials and maintain a clear, collaborative workflow.
-
 
 2. Organized Eye-Tracking Metrics
   Extracted and reviewed 50 trial-level metrics from EyeLink exports
@@ -16,16 +15,12 @@
 
 3. Evaluated Labeling Challenges
   Analysised limitations of subjective cognitive strategy labels (e.g., planner, explorer)
-  Considered alternatives including rule-based annotation and strategy-neutral analysis, and decided to use strategy-neutral analysis (unsupervised). THe 
+  Considered alternatives including rule-based annotation and strategy-neutral analysis, and decided to use strategy-neutral analysis (unsupervised). 
 
 4. Designed Unsupervised Analysis Pipeline
   Developed a complete, strategy-neutral unsupervised pipeline using dimensionality reduction (UMAP/t-SNE) and clustering (HDBSCAN/KMeans)
   Saved the design in unsupervised_pipeline.md
   
-Did a preliminary reasearch and consideration on this research diagram.
-- 
-
-
 
 # 7/1/2025
 1. Machine Learning Preparation
