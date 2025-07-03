@@ -12,7 +12,9 @@ Aligned acquired ML knowledge with the goals of applying predictive and pattern 
 Earned certification to formally validate this training.
 
 2. Eye-Tracking Data Preparation
-Successfully extracted and cleaned raw eye-tracking data from the lab's collection device for downstream analysis.
+Successfully extracted and cleaned raw eye-tracking data from the collection device. Flag incomplete participant, whose trail number is not equal to 21. The flagged data is listed below:
+  ET24_068 (23), ET24_091 (23), ET24_092 (23), ET220002 (19), ET220003 (23), ET220008 (23)
+
 Data format standardization (fixation, saccade, and AOI metrics)
 Preliminary quality check and outlier detection
 Removal of incomplete trials and correction of timestamp alignment issues
