@@ -15,7 +15,7 @@ This project investigates cognitive strategy and spatial reasoning through the a
 
 - 80 participants from spatial reasoning tasks (30 from 2024, 50 from 2023)
 - EyeLink 1000+ raw exports
-Details can be found: [Data_clean.ipynb](notebooks/Data_clean.ipynb)
+Details and descriptive summary of rated data can be found: [Data_clean.ipynb](notebooks/Data_clean.ipynb)
 
 
 ## Research Goals
@@ -27,10 +27,13 @@ Details can be found: [Data_clean.ipynb](notebooks/Data_clean.ipynb)
 
 ## How to Run
 
-Run `analysis.ipynb` to:
+Run [Data_clean.ipynb](../notebooks/Data_clean.ipynb) to:
 - Clean data
 - Extract metrics
-- Train ML models (Random Forest, PCA)
+- Descriptive Summary of Data
+
+Run [ML.ipynb](../notebooks/ML.ipynb) (under construction) to:
+- Train ML models 
 
 Dependencies: pandas, sklearn, matplotlib
 
@@ -43,9 +46,10 @@ See [data_dictionary.md](data/data_dictionary.md) for full metric descriptions.
 ## Update Log
 
 See [Update Log.md](log/update_log.md) for detailed updata and process.
-- **2025-07-03**: Added `data_dictionary.md` and linked from README
-- **2025-06-28**: Dropped warm-up trials and removed ET220002
-- **2025-06-28**: Preprocessing pipeline finalized for 150 valid samples
+- **2025-07-03**: Use key rate all trails and conduct descriptive summary: [eye_tracking_rated.csv](../data/eye_tracking_rated.csv) [Data_clean.ipynb](../notebooks/Data_clean.ipynb).
+- **2025-07-02**: Set up this repository; Deeply comparing supervised or unsupervised method; Extract all metric from Eyelink data and categorized them into fixation, saccade, pupil, blink, AOI, and interaction features. [data_dictionary.md](../data/data_dictionary.md)
+- **2025-07-01**: Finished Machine Learning Course (From 6/1/2025).
+- **2025-06-28**: Preprocessing 80 valid samples in Eye-Tracking Data.
 - **2025-06-01**: 
 
 
