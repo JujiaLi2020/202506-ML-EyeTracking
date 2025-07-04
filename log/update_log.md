@@ -12,8 +12,7 @@
 2. Organized Eye-Tracking Metrics
   Extracted and reviewed 50 trial-level metrics from EyeLink exports
   Categorized them into fixation, saccade, pupil, blink, AOI, and interaction features
-  Created data_dictionary.md documenting all variables with descriptions
-  Linked this dictionary for future GitHub integration: [data_dictionary.md](../data/data_dictionary.md)
+  Created data_dictionary.md documenting all variables with descriptions, and linked this dictionary for future GitHub integration: [data_dictionary.md](../data/data_dictionary.md)
 
 3. Evaluated Labeling Challenges
   Analysised limitations of subjective cognitive strategy labels (e.g., planner, explorer)
@@ -25,7 +24,7 @@
   
 
 ### 7/1/2025
-1. Machine Learning Preparation
+1. Finished Machine Learning Course (From 6/1/2025)
 Successfully completed a 3-month Machine Learning course offered by Andrew Ng (DeepLearning.AI) in collaboration with Stanford University.
 Gained a comprehensive understanding of:
 - Supervised learning (e.g., classification, regression)
