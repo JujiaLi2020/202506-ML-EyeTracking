@@ -1,7 +1,9 @@
 
 7/3/2025
 1. Use key rate all response
-
+  80 participants from spatial reasoning tasks (30 from 2024, 50 from 2023)
+  Cleaned and rated dataset has been saved in [eye_tracking_rated.csv](eye_tracking_rated.csv)
+  Process and descriptive summary of rated data can be found: [Data_clean.ipynb](notebooks/Data_clean.ipynb)
 
 
 7/2/2025
