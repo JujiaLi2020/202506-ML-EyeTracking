@@ -13,7 +13,7 @@
   Extracted and reviewed 50 trial-level metrics from EyeLink exports
   Categorized them into fixation, saccade, pupil, blink, AOI, and interaction features
   Created data_dictionary.md documenting all variables with descriptions
-  Linked this dictionary for future GitHub integration: [data_dictionary.md](./data/data_dictionary.md)
+  Linked this dictionary for future GitHub integration: [data_dictionary.md](../data/data_dictionary.md)
 
 3. Evaluated Labeling Challenges
   Analysised limitations of subjective cognitive strategy labels (e.g., planner, explorer)
