@@ -2,8 +2,8 @@
 7/3/2025
 1. Use key rate all response
   80 participants from spatial reasoning tasks (30 from 2024, 50 from 2023)
-  Cleaned and rated dataset has been saved in [eye_tracking_rated.csv](./data/eye_tracking_rated.csv)
-  Process and descriptive summary of rated data can be found: [Data_clean.ipynb](./notebooks/Data_clean.ipynb)
+  Cleaned and rated dataset has been saved in [eye_tracking_rated.csv](../data/eye_tracking_rated.csv)
+  Process and descriptive summary of rated data can be found: [Data_clean.ipynb](../notebooks/Data_clean.ipynb)
 
 
 7/2/2025
@@ -13,7 +13,7 @@
   Extracted and reviewed 50 trial-level metrics from EyeLink exports
   Categorized them into fixation, saccade, pupil, blink, AOI, and interaction features
   Created data_dictionary.md documenting all variables with descriptions
-  Linked this dictionary for future GitHub integration: [data_dictionary.md](./data_dictionary.md)
+  Linked this dictionary for future GitHub integration: [data_dictionary.md](../data_dictionary.md)
 
 3. Evaluated Labeling Challenges
   Analysised limitations of subjective cognitive strategy labels (e.g., planner, explorer)
