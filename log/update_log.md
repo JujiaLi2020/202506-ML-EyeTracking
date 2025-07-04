@@ -1,12 +1,12 @@
 
-## 7/3/2025
+### 7/3/2025
 1. Use key rate all response
   80 participants from spatial reasoning tasks (30 from 2024, 50 from 2023)
   Cleaned and rated dataset has been saved in [eye_tracking_rated.csv](../data/eye_tracking_rated.csv)
   Process and descriptive summary of rated data can be found: [Data_clean.ipynb](../notebooks/Data_clean.ipynb)
 
 
-## 7/2/2025
+### 7/2/2025
 1. Set up this repository to organize all required materials and maintain a clear, collaborative workflow.
 
 2. Organized Eye-Tracking Metrics
@@ -24,7 +24,7 @@
   Saved the design in unsupervised_pipeline.md
   
 
-## 7/1/2025
+### 7/1/2025
 1. Machine Learning Preparation
 Successfully completed a 3-month Machine Learning course offered by Andrew Ng (DeepLearning.AI) in collaboration with Stanford University.
 Gained a comprehensive understanding of:
@@ -35,7 +35,7 @@ Aligned acquired ML knowledge with the goals of applying predictive and pattern 
 Earned certification to formally validate this training.
 
 
-## 6/26/2025
+### 6/26/2025
 1. Eye-Tracking Data Preparation
 - Successfully extracted raw eye-tracking data from the collection device. We only have 30 samples in 2024, and 50 samples in 2023.
 - Flag incomplete participant, whose trail number is not equal to 21. The flagged data is listed below:
