@@ -17,13 +17,13 @@ We updated this table according to Eyelink official document, and add the inclus
 | FIXATION_DURATION_MIN_TIME              | Start time (EDF file time) of the shortest fixation in the trial                                              | Fixation     | No                           |
 | MEDIAN_FIXATION_DURATION                | Median fixation duration (ms) in the trial (selected interest period)                                         | Fixation     | Yes                          |
 | SD_FIXATION_DURATION                    | SD of fixation durations in the trial (selected interest period)                                              | Fixation     | Maybe                        |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------|------------------------------|
+|-|
 | **Saccade**                             |                                                                                                               |              |                              |
 | AVERAGE_SACCADE_AMPLITUDE               | Avg. amplitude (deg of visual angle) of all saccades in the trial (selected interest period)                  | Saccade      | Yes                          |
 | MEDIAN_SACCADE_AMPLITUDE                | Median saccade amplitude (deg of visual angle) in the trial (selected interest period)                        | Saccade      | Yes                          |
 | SACCADE_COUNT                           | Total number of saccades in the trial                                                                         | Saccade      | Yes                          |
 | SD_SACCADE_AMPLITUDE                    | SD of saccade amplitudes in the trial (selected interest period)                                              | Saccade      | Maybe                        |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------|------------------------------|
+|-|
 | **Pupil**                               |                                                                                                               |              |                              |
 | PUPIL_SIZE_MEAN                         | Average pupil size in the trial (selected interest period)                                                    | Pupil        | Yes                          |
 | PUPIL_SIZE_MAX                          | Largest pupil size in the trial (selected interest period)                                                    | Pupil        | Maybe                        |
@@ -32,7 +32,7 @@ We updated this table according to Eyelink official document, and add the inclus
 | PUPIL_SIZE_MIN_TIME                     | EDF file time of sample with minimum pupil size                                                               | Pupil        | No                           |
 | PUPIL_SIZE_MAX_X, PUPIL_SIZE_MAX_Y      | Gaze X/Y at maximum pupil size sample                                                                         | Pupil        | No                           |
 | PUPIL_SIZE_MIN_X, PUPIL_SIZE_MIN_Y      | Gaze X/Y at minimum pupil size sample                                                                         | Pupil        | No                           |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------|------------------------------|
+|-|
 | **Blink**                               |                                                                                                               |              |                              |
 | AVERAGE_BLINK_DURATION                  | Avg. duration (ms) of all blinks in the trial (selected interest period)                                      | Blink        | Yes                          |
 | BLINK_COUNT                             | Total number of blinks in the trial (selected interest period)                                                | Blink        | Yes                          |
