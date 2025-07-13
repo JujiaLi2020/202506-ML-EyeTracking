@@ -190,6 +190,7 @@ references
 
 
 # Ignore data folder
+data
 *.csv
 *.xlsx
 *.json
