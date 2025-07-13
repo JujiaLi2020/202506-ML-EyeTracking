@@ -1,3 +1,6 @@
+### 7/13/2025
+1. Previous collected data was extracted by trail report function in Eyelink, which only offer basic metrics, majorly limited in fixation catergory. To extend metrics to saccade, pupil, and blink catergories, we extract data by using fixation, saccade report function. In this study, we begin an unsupervised ML method without interest area data. Therefore, after merging all metrics into a complete dataset, we select useful metrics from four metric catergorie: fixation, saccade, pupil, and blink.
+   
 
 ### 7/3/2025
 1. Use key rate all response
