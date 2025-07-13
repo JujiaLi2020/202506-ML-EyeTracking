@@ -6,7 +6,7 @@ This document provides an organized overview of all variables extracted from Eye
 We updated this table according to Eyelink official document, and add the inclusion for first-step ML exploration.
 ---
 
-| Field/Variable                          | Description                                                                                                   | Category      | Include for Unsupervised ML? |
+| Field/Variable                          | Description                                                                                                   | Category      | Include for Unsupervised ML |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------|------------------------------|
 | **Fixation**                            |                                                                                                               |              |                              |
 | AVERAGE_FIXATION_DURATION               | Avg. duration (ms) of all fixations in the trial (selected interest period)                                   | Fixation     | Yes                          |
