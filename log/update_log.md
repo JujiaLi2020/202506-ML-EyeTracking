@@ -1,3 +1,5 @@
+
+
 ### 7/14/2025
 #### 1. Upload the Jupyter note of UNSUPERVISED ML. Please refer [1-Unsupervised.ipynb](../notebooks/1-Unsupervised.ipynb)
 #### 2. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
@@ -16,6 +18,7 @@
 | AVERAGE_BLINK_DURATION_log      | 0.089984   |
 | BLINK_COUNT_log                 | 0.043258   |
 #### 5. Upload a draft of proposal. Please refer [Proposal Draft.docx](../Proposal/Proposal Draft.docx)
+#### 6. During meeting: Refer literature: Thomas Lowry, Sheryl Sorby, Gavin, Khooshabeh et al. 2011 Roach 2016 holistic vs piecemeal 
 
 
 ### 7/13/2025
