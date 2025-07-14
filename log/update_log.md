@@ -1,3 +1,9 @@
+### 7/14/2025
+#### 1. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
+
+
+
+
 ### 7/13/2025
 #### 1. We updated [data_dictionary.md](../data/data_dictionary.md) according to Eyelink official document, and add the inclusion for first-step ML exploration.
 #### 2. Descriptive Statistics
