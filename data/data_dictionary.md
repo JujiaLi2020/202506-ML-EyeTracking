@@ -2,7 +2,7 @@
 
 This document provides an organized overview of all variables extracted from EyeLink trial-level exports, grouped by functional category. These metrics support gaze-based analysis of cognitive processing, spatial reasoning, and behavioral strategies.
 
-# 7/13/2025
+### 7/13/2025
 We updated this table according to Eyelink official document, and add the inclusion for first-step ML exploration.
 ---
 
