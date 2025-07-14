@@ -2,7 +2,19 @@
 #### 1. Upload the Jupyter note of UNSUPERVISED ML. Please review [1-Unsupervised.ipynb](../notebooks/1-Unsupervised.ipynb)
 #### 2. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
 #### 3. Used Random Forest Classifier to assess feature importance (based on KMeans or binary accuracy label). Visualized top gaze-based predictors (e.g., fixation count, saccade amplitude).
-#### 4. Toward Supervised Learning: Prepared labels (e.g., binary response accuracy). Built preliminary Random Forest models to predict performance. Interpreted classification outputs and confusion matrices.
+#### 4. Toward Supervised Learning: Prepared labels (e.g., binary response accuracy). Built preliminary Random Forest models to predict performance. We calculated the impantance of metrics, shown as below:
+| Feature                         | Importance |
+|---------------------------------|------------|
+| AVERAGE_FIXATION_DURATION_log   | 0.125806   |
+| FIXATION_COUNT_log              | 0.125578   |
+| AVERAGE_SACCADE_AMPLITUDE_sqrt  | 0.114668   |
+| MEDIAN_SACCADE_AMPLITUDE_sqrt   | 0.107846   |
+| PUPIL_SIZE_MEAN                 | 0.105414   |
+| PUPIL_SIZE_MIN                  | 0.098516   |
+| SD_SACCADE_AMPLITUDE            | 0.095461   |
+| FIXATION_DURATION_MIN_log       | 0.093469   |
+| AVERAGE_BLINK_DURATION_log      | 0.089984   |
+| BLINK_COUNT_log                 | 0.043258   |
 
 
 
