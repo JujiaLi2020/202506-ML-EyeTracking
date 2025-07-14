@@ -1,6 +1,30 @@
 ### 7/13/2025
-1. We updated [data_dictionary.md](../data/data_dictionary.md) according to Eyelink official document, and add the inclusion for first-step ML exploration.
-2. Previous collected data was extracted by trail report function in Eyelink, which only offer basic metrics, majorly limited in fixation catergory. To extend metrics to saccade, pupil, and blink catergories, we extract data by using fixation, saccade report function.
+## 1. We updated [data_dictionary.md](../data/data_dictionary.md) according to Eyelink official document, and add the inclusion for first-step ML exploration.
+## 2. Descriptive Statistics
+- Calculated key metrics: mean, median, skewness, kurtosis, IQR, variance, and missingness.
+- Visualized distributions with histograms and KDEs.
+
+## 3. Data Preprocessing
+- Excluded non-metric columns: `RECORDING_SESSION_LABEL`, `trialid`, `response`.
+- Identified and transformed highly skewed variables.
+- Imputed missing values using **median imputation**.
+- Standardized numeric features with `StandardScaler`.
+
+## 4. Dimensionality Reduction
+- Applied **PCA**, **t-SNE**, and **UMAP** for 2D projection and visualization.
+- Aimed to reveal underlying data structure and separability.
+
+## 5. Unsupervised Learning
+- Performed **KMeans clustering** (2–5 clusters).
+- Evaluated with **Silhouette Score** (~0.17).
+- Visualized clusters in PCA and UMAP space.
+
+## 6. Key Insights
+- Clusters were **not well-separated** across methods.
+- Data may lack strong unsupervised structure.
+- Suggested alternative approaches: supervised learning or task-specific modeling.
+
+## 7. Previous collected data was extracted by trail report function in Eyelink, which only offer basic metrics, majorly limited in fixation catergory. To extend metrics to saccade, pupil, and blink catergories, we extract data by using fixation, saccade report function.
    
 
 ### 7/3/2025
