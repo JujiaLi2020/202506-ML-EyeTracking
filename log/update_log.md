@@ -1,5 +1,5 @@
 ### 7/14/2025
-#### 1. Upload the Jupyter note of UNSUPERVISED ML. Please review [1-Unsupervised.ipynb](../notebooks/1-Unsupervised.ipynb)
+#### 1. Upload the Jupyter note of UNSUPERVISED ML. Please refer [1-Unsupervised.ipynb](../notebooks/1-Unsupervised.ipynb)
 #### 2. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
 #### 3. Used Random Forest Classifier to assess feature importance (based on KMeans or binary accuracy label). Visualized top gaze-based predictors (e.g., fixation count, saccade amplitude).
 #### 4. Toward Supervised Learning: Prepared labels (e.g., binary response accuracy). Built preliminary Random Forest models to predict performance. We calculated the impantance of metrics, shown as below:
@@ -15,7 +15,7 @@
 | FIXATION_DURATION_MIN_log       | 0.093469   |
 | AVERAGE_BLINK_DURATION_log      | 0.089984   |
 | BLINK_COUNT_log                 | 0.043258   |
-
+#### 5. Upload a draft of proposal. Please refer [Proposal Draft.docx](../Proposal/Proposal Draft.docx)
 
 
 ### 7/13/2025
