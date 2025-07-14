@@ -1,12 +1,14 @@
 ### 7/14/2025
-#### 1. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
-
+#### 1. Upload the Jupyter note of UNSUPERVISED ML. Please review [1-Unsupervised.ipynb](../notebooks/1-Unsupervised.ipynb)
+#### 2. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
+#### 3. Used Random Forest Classifier to assess feature importance (based on KMeans or binary accuracy label). Visualized top gaze-based predictors (e.g., fixation count, saccade amplitude).
+#### 4. Toward Supervised Learning: Prepared labels (e.g., binary response accuracy). Built preliminary Random Forest models to predict performance. Interpreted classification outputs and confusion matrices.
 
 
 
 ### 7/13/2025
 #### 1. We updated [data_dictionary.md](../data/data_dictionary.md) according to Eyelink official document, and add the inclusion for first-step ML exploration.
-#### 2. Descriptive Statistics
+#### 2. Descriptive Statistics for all metrics
 - Calculated key metrics: mean, median, skewness, kurtosis, IQR, variance, and missingness.
 - Visualized distributions with histograms and KDEs.
 
@@ -18,7 +20,7 @@
 
 #### 4. Dimensionality Reduction
 - Applied **PCA**, **t-SNE**, and **UMAP** for 2D projection and visualization.
-- Aimed to reveal underlying data structure and separability.
+- Aimed to reveal underlying data structure and separability. 
 
 #### 5. Unsupervised Learning
 - Performed **KMeans clustering** (2–5 clusters).
