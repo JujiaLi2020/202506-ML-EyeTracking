@@ -1,3 +1,37 @@
+### 7/22/2025
+
+####1. t-SNE + KMeans Clustering on Eye-Tracking Data
+I used t-SNE for dimensionality reduction and visualized patterns in the eye-tracking features.
+Within each of the 3×3 Ability × Difficulty subgroups (low/mid/high ability × easy/moderate/hard difficulty), I applied KMeans clustering with K=2.
+This revealed a much better structure.
+
+#### 2. Dimensionality Reduction with PCA
+I performed PCA and selected the top contributing features from PC1 for clustering (e.g., fixation count, saccade features, blink metrics).
+These features were used for both t-SNE and clustering procedures.
+
+#### 3. Outlier Detection with Isolation Forest
+I applied Isolation Forest (with 5% contamination) to detect outliers in the PCA-reduced space.
+I visualized t-SNE results before and after removing outliers, confirming that outlier removal reduced noise in the embeddings.
+
+#### 4. Cluster Quality Evaluation with Silhouette Scores
+I computed silhouette scores for different K values (2–9) separately for inliers and outliers:
+Inliers: Best score at K=2 (≈0.21), suggesting weak but stable structure.
+Outliers: Best score at K=8 (≈0.36), indicating meaningful heterogeneity within the outliers.
+
+#### 5. Accuracy by Cluster
+I computed mean response accuracy for each (Ability × Difficulty × Cluster) group.
+I used catplot() to visualize accuracy by cluster across groups, with ordered axes for:
+Difficulty: easy → moderate → hard
+Ability: low → mid → high
+This showed performance differences across clusters, supporting the idea that clusters may reflect problem-solving strategies.
+
+6. Interpretation
+The inlier clusters showed mild structure and may represent typical strategy use.
+The outliers were not just noise; they revealed rich internal variation and may represent:
+Atypical strategies
+Misfits to common patterns
+Important subgroups for further analysis
+
 
 
 ### 7/14/2025
