@@ -1,47 +1,12 @@
 ### 7/25/2025 
-
-When we 
-
-
+we clustered participants' theta estimates using K-Means (k=4), sorted the clusters by mean theta to label them as low, mid-low, mid-high, and high ability, and assigned individuals to ability × difficulty groups. We then performed t-SNE dimensionality reduction followed by K-Means clustering (k=4) within each subgroup based on eye-tracking features. The resulting strategy clusters were visualized using seaborn.FacetGrid plots, displaying t-SNE coordinates colored by cluster across ability and difficulty levels. We also reviewed and improved layout elements (spacing, legends, titles), and discussed future enhancements including switching to UMAP for better speed and structure preservation, using colorblind-friendly palettes, and incorporating accuracy indicators via shape or size.
 
 
 ### 7/24/2025  
-
-#### 1. Ability Grouping (`theta_cluster`)
-Used KMeans clustering on `theta` (n=4).
-- Label mapping:
-  - Cluster 0 → `low`
-  - Cluster 1 → `mid-low`
-  - Cluster 2 → `mid-high`
-  - Cluster 3 → `high`
-- Saved as `theta_group_kmeans`.
-
-#### 2. Item Difficulty Grouping
-- Rule:  
-  - `b < 0` → `easy`  
-  - `b ≥ 0` → `hard`  
-- Stored in column `difficulty_group`.
-
-#### 3. Cluster Detection Within Subgroups
-- Used t-SNE + KMeans (k=4) within each of 4×2 ability × difficulty subgroups.
-- Features used: all eye-tracking metrics.
-- Stored:
-  - `tSNE1`, `tSNE2` – t-SNE coordinates
-  - `Cluster` – KMeans label
-
-#### 4. Challenge Index
-- Defined:  
-  `challenge = theta - b`  
-- Interpreted as perceived item difficulty from participant's perspective.
-
-Cluster–Challenge Relationship (ANOVA)
-- **F(4, 1023) = 4.25**, **p = 0.002**
-- Indicates significant differences in challenge levels across clusters.
-
+We performed ability grouping using KMeans (k=4) on participants’ theta estimates and labeled the clusters as low, mid-low, mid-high, and high (saved in theta_group_kmeans). Item difficulty was categorized into easy and hard using a binary split at b = 0, stored in difficulty_group. Within each of the resulting 4×2 ability × difficulty subgroups, we applied t-SNE for dimensionality reduction followed by KMeans clustering (k=4) using eye-tracking features, with outputs stored in tSNE1, tSNE2, and Cluster. We defined a new metric, challenge = theta - b, to represent the subjective difficulty level of each item. An ANOVA revealed that perceived challenge significantly differed across clusters, F(4, 1023) = 4.25, p = 0.002.
 
 
 ### 7/22/2025
-
 ####1. t-SNE + KMeans Clustering on Eye-Tracking Data
 I used t-SNE for dimensionality reduction and visualized patterns in the eye-tracking features.
 Within each of the 3×3 Ability × Difficulty subgroups (low/mid/high ability × easy/moderate/hard difficulty), I applied KMeans clustering with K=2.
