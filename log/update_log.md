@@ -1,12 +1,105 @@
+### 7/25/2025 
+
+When we 
+
+
+
+
+### 7/24/2025  
+
+#### 1. Ability Grouping (`theta_cluster`)
+Used KMeans clustering on `theta` (n=4).
+- Label mapping:
+  - Cluster 0 → `low`
+  - Cluster 1 → `mid-low`
+  - Cluster 2 → `mid-high`
+  - Cluster 3 → `high`
+- Saved as `theta_group_kmeans`.
+
+#### 2. Item Difficulty Grouping
+- Rule:  
+  - `b < 0` → `easy`  
+  - `b ≥ 0` → `hard`  
+- Stored in column `difficulty_group`.
+
+#### 3. Cluster Detection Within Subgroups
+- Used t-SNE + KMeans (k=4) within each of 4×2 ability × difficulty subgroups.
+- Features used: all eye-tracking metrics.
+- Stored:
+  - `tSNE1`, `tSNE2` – t-SNE coordinates
+  - `Cluster` – KMeans label
+
+#### 4. Challenge Index
+- Defined:  
+  `challenge = theta - b`  
+- Interpreted as perceived item difficulty from participant's perspective.
+
+Cluster–Challenge Relationship (ANOVA)
+- **F(4, 1023) = 4.25**, **p = 0.002**
+- Indicates significant differences in challenge levels across clusters.
+
+
+
+### 7/22/2025
+
+####1. t-SNE + KMeans Clustering on Eye-Tracking Data
+I used t-SNE for dimensionality reduction and visualized patterns in the eye-tracking features.
+Within each of the 3×3 Ability × Difficulty subgroups (low/mid/high ability × easy/moderate/hard difficulty), I applied KMeans clustering with K=2.
+This revealed a much better structure.
+
+#### 2. Dimensionality Reduction with PCA
+I performed PCA and selected the top contributing features from PC1 for clustering (e.g., fixation count, saccade features, blink metrics).
+These features were used for both t-SNE and clustering procedures.
+
+#### 3. Outlier Detection with Isolation Forest
+I applied Isolation Forest (with 5% contamination) to detect outliers in the PCA-reduced space.
+I visualized t-SNE results before and after removing outliers, confirming that outlier removal reduced noise in the embeddings.
+
+#### 4. Cluster Quality Evaluation with Silhouette Scores
+I computed silhouette scores for different K values (2–9) separately for inliers and outliers:
+Inliers: Best score at K=2 (≈0.21), suggesting weak but stable structure.
+Outliers: Best score at K=8 (≈0.36), indicating meaningful heterogeneity within the outliers.
+
+#### 5. Accuracy by Cluster
+I computed mean response accuracy for each (Ability × Difficulty × Cluster) group.
+I used catplot() to visualize accuracy by cluster across groups, with ordered axes for:
+Difficulty: easy → moderate → hard
+Ability: low → mid → high
+This showed performance differences across clusters, supporting the idea that clusters may reflect problem-solving strategies.
+
+6. Interpretation
+The inlier clusters showed mild structure and may represent typical strategy use.
+The outliers were not just noise; they revealed rich internal variation and may represent:
+Atypical strategies
+Misfits to common patterns
+Important subgroups for further analysis
+
+
+
 ### 7/14/2025
-#### 1. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
-
-
+#### 1. Upload the Jupyter note of UNSUPERVISED ML. Please refer [1-Unsupervised.ipynb](../notebooks/1-Unsupervised.ipynb)
+#### 2. We found some outlies and decided to use Isolation Forest for exploratory anomaly detection.
+#### 3. Used Random Forest Classifier to assess feature importance (based on KMeans or binary accuracy label). Visualized top gaze-based predictors (e.g., fixation count, saccade amplitude).
+#### 4. Toward Supervised Learning: Prepared labels (e.g., binary response accuracy). Built preliminary Random Forest models to predict performance. We calculated the impantance of metrics, shown as below:
+| Feature                         | Importance |
+|---------------------------------|------------|
+| AVERAGE_FIXATION_DURATION_log   | 0.125806   |
+| FIXATION_COUNT_log              | 0.125578   |
+| AVERAGE_SACCADE_AMPLITUDE_sqrt  | 0.114668   |
+| MEDIAN_SACCADE_AMPLITUDE_sqrt   | 0.107846   |
+| PUPIL_SIZE_MEAN                 | 0.105414   |
+| PUPIL_SIZE_MIN                  | 0.098516   |
+| SD_SACCADE_AMPLITUDE            | 0.095461   |
+| FIXATION_DURATION_MIN_log       | 0.093469   |
+| AVERAGE_BLINK_DURATION_log      | 0.089984   |
+| BLINK_COUNT_log                 | 0.043258   |
+#### 5. Upload a draft of proposal. Please refer [Proposal Draft.docx](../Proposal/Proposal Draft.docx)
+#### 6. During meeting: Refer literature: Thomas Lowry, Sheryl Sorby, Gavin, Khooshabeh et al. 2011 Roach 2016 holistic vs piecemeal 
 
 
 ### 7/13/2025
 #### 1. We updated [data_dictionary.md](../data/data_dictionary.md) according to Eyelink official document, and add the inclusion for first-step ML exploration.
-#### 2. Descriptive Statistics
+#### 2. Descriptive Statistics for all metrics
 - Calculated key metrics: mean, median, skewness, kurtosis, IQR, variance, and missingness.
 - Visualized distributions with histograms and KDEs.
 
@@ -18,7 +111,7 @@
 
 #### 4. Dimensionality Reduction
 - Applied **PCA**, **t-SNE**, and **UMAP** for 2D projection and visualization.
-- Aimed to reveal underlying data structure and separability.
+- Aimed to reveal underlying data structure and separability. 
 
 #### 5. Unsupervised Learning
 - Performed **KMeans clustering** (2–5 clusters).
