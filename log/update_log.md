@@ -1,3 +1,45 @@
+### 7/25/2025 
+
+When we 
+
+
+
+
+### 7/24/2025  
+
+#### 1. Ability Grouping (`theta_cluster`)
+Used KMeans clustering on `theta` (n=4).
+- Label mapping:
+  - Cluster 0 → `low`
+  - Cluster 1 → `mid-low`
+  - Cluster 2 → `mid-high`
+  - Cluster 3 → `high`
+- Saved as `theta_group_kmeans`.
+
+#### 2. Item Difficulty Grouping
+- Rule:  
+  - `b < 0` → `easy`  
+  - `b ≥ 0` → `hard`  
+- Stored in column `difficulty_group`.
+
+#### 3. Cluster Detection Within Subgroups
+- Used t-SNE + KMeans (k=4) within each of 4×2 ability × difficulty subgroups.
+- Features used: all eye-tracking metrics.
+- Stored:
+  - `tSNE1`, `tSNE2` – t-SNE coordinates
+  - `Cluster` – KMeans label
+
+#### 4. Challenge Index
+- Defined:  
+  `challenge = theta - b`  
+- Interpreted as perceived item difficulty from participant's perspective.
+
+Cluster–Challenge Relationship (ANOVA)
+- **F(4, 1023) = 4.25**, **p = 0.002**
+- Indicates significant differences in challenge levels across clusters.
+
+
+
 ### 7/22/2025
 
 ####1. t-SNE + KMeans Clustering on Eye-Tracking Data
